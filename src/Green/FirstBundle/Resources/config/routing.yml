@@ -1,0 +1,11 @@
+index:
+    path:       /
+    defaults:   { _controller: GreenFirstBundle:Index:index }
+
+random:
+    path:       /random/{limit}
+    defaults:   { _controller: GreenFirstBundle:Random:index, limit: 100 }
+
+hello:
+    path:       /hello/{ firstName }/{ lastName }
+    defaults:   { _controller: GreenFirstBundle:Index:hello, firstName: Green, lastName: Grey }
