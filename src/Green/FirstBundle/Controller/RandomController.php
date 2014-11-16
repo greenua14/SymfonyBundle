@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: green
- * Date: 11/15/14
- * Time: 6:00 PM
- */
 
 namespace Green\FirstBundle\Controller;
 
