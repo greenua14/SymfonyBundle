@@ -30,4 +30,32 @@ class IndexController extends Controller
             )
         );
     }
+
+    public function blogAction()
+    {
+        $data = array();
+
+        for($i = 0; $i < 15; $i++)
+        {
+            $data[$i] = 'Record № ' . $i;
+        }
+
+        return $this->render(
+            'GreenFirstBundle:Index:blog.html.twig',
+            array(
+                'data' => $data
+            )
+        );
+    }
+
+    public function showAction($id, $rec = null)
+    {
+        return $this->render(
+            'GreenFirstBundle:Index:show.html.twig',
+            array(
+                'id' => $id,
+                'rec' => $rec
+            )
+        );
+    }
 } 

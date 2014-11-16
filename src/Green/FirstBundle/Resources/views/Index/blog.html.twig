@@ -1,0 +1,14 @@
+{% extends 'AcmeDemoBundle::layout.html.twig' %}
+
+{% block body %}
+    <h1>Records:</h1>
+    <ul>
+        {% for key, record in data %}
+            <li>
+                <a href="{{ path('blog_show_id', {'id': key, 'rec': record}) }}">
+                    {{ record }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

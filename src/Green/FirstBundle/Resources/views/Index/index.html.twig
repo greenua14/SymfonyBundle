@@ -2,4 +2,22 @@
 
 {% block body %}
     Hello index Action!
+
+    <p>
+        <a href="{{ path('random') }}">
+            Random page
+        </a>
+    </p>
+
+    <p>
+        <a href="{{ path('hello') }}">
+            Hello page
+        </a>
+    </p>
+
+    <p>
+        <a href="{{ path('blog') }}">
+            Blog page
+        </a>
+    </p>
 {% endblock %}
