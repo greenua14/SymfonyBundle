@@ -28,8 +28,8 @@ class IndexController extends Controller
     public function blogAction()
     {
         $data = array();
-
-        for($i = 0; $i < 15; $i++)
+        
+        for($i = 0; $i < 10; $i++)
         {
             $data[$i] = 'Record № ' . $i;
         }
