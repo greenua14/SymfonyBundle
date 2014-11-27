@@ -1,0 +1,19 @@
+index:
+    path:       /
+    defaults:   { _controller: GreenFirstBundle:Index:index }
+
+random:
+    path:       /random/{limit}
+    defaults:   { _controller: GreenFirstBundle:Random:index, limit: 100 }
+
+hello:
+    path:       /hello/{firstName}/{lastName}
+    defaults:   { _controller: GreenFirstBundle:Index:hello, firstName: Green, lastName: Grey }
+
+blog:
+    path:       /blog
+    defaults:   { _controller: GreenFirstBundle:Index:blog }
+
+blog_show_id:
+    path:       /show/{id}/{rec}
+    defaults:   { _controller: GreenFirstBundle:Index:show }
